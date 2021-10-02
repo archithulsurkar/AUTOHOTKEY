@@ -1,3 +1,0 @@
-- 👋 Hi, I’m @archithulsurkar
-- 👀 I’m interested in Operating Systems
-- 🌱 I’m currently learning Computer Science
