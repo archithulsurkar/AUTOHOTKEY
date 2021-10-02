@@ -1,0 +1,44 @@
+F1::
+if WinActive("ahk_class MozillaWindowClass")
+	Send ^+{tab} 
+if WinActive("ahk_class Chrome_WidgetWin_1")
+	Send ^+{tab}
+if WinActive("ahk_class Notepad++")
+	Send ^+{tab}
+if WinActive("ahk_exe explorer.exe")
+	Send !{left} 
+Return
+
+
+F2::
+IfWinNotExist, ahk_class CabinetWClass
+	Run, explorer.exe
+if WinActive("ahk_exe explorer.exe")
+	WinActivate ahk_class CabinetWClass 
+Return
+
+
+F3::
+IfWinNotExist, ahk_class Chrome_WidgetWin_1
+	Run, chrome.exe
+if WinActive("ahk_class Chrome_WidgetWin_1")
+	Send ^{tab}
+	WinActivate ahk_class Chrome_WidgetWin_1
+Return
+
+
+
+F4::
+Process, Exist, WINWORD.EXE
+	If errorLevel = 0
+		Run, WINWORD.EXE
+Return
+
+
+F5::
+IfWinNotExist, ahk_class ONENOTE
+	Run, ONENOTE.exe
+WinActivate ahk_class ONENOTE
+Return
+; you can add more functions to this script as you wish 
+;use the tutorial from https://www.autohotkey.com/docs/Tutorial.htm
