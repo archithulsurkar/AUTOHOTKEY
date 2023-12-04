@@ -42,3 +42,9 @@ WinActivate ahk_class ONENOTE
 Return
 ; you can add more functions to this script as you wish 
 ;use the tutorial from https://www.autohotkey.com/docs/Tutorial.htm
+
+
+F10::
+;Win+shift+s
+
+
