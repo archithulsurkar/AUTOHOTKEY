@@ -45,6 +45,6 @@ Return
 
 
 F10::
-;Win+shift+s
+Send{RWin+Shift+S}
 
 
